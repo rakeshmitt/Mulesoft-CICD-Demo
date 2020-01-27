@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="git-api-demo-test-suite.xml" />
+	<munit:test name="git-api-demo-test-suite-git-api-demoFlowTest" doc:id="77f9e77a-1e1c-4230-9b9b-3133729e95c3" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to git-api-demoFlow" doc:id="c4ca5c9c-aa02-432e-a03e-9e2439d5d473" name="git-api-demoFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="3d8e80c7-315b-45c3-b94a-9cfc0f0c15d4" is="#[MunitTools::equalTo('Hello')]" expression="#[payload]"/>
+		</munit:validation>
+	</munit:test>
+
+
+</mule>
