@@ -13,7 +13,7 @@
 			<flow-ref doc:name="Flow-ref to git-api-demoFlow" doc:id="c4ca5c9c-aa02-432e-a03e-9e2439d5d473" name="git-api-demoFlow"/>
 		</munit:execution>
 		<munit:validation >
-			<munit-tools:assert-that doc:name="Assert that" doc:id="3d8e80c7-315b-45c3-b94a-9cfc0f0c15d4" is="#[MunitTools::equalTo('Hello')]" expression="#[payload]"/>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="3d8e80c7-315b-45c3-b94a-9cfc0f0c15d4" is="#[MunitTools::equalTo('Hello Friend -- How are you')]" expression="#[payload]"/>
 		</munit:validation>
 	</munit:test>
 
