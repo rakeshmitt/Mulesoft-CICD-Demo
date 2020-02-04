@@ -32,7 +32,8 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<deploymentType>arm</deploymentType>
+					<deploymentType>cloudhub</deploymentType>
+					<muleVersion>4.1.2</muleVersion>
 					<username>rakeshntt</username>
 					<password>R@kesh007</password>
 					<target>cloudhub</target>
