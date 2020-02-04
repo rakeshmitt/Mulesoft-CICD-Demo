@@ -27,6 +27,13 @@
 				<extensions>true</extensions>
 			</plugin>
 			<plugin>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-deploy-plugin</artifactId>
+			  <configuration>
+			    <skip>true</skip>
+			  </configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
@@ -36,6 +43,7 @@
 					<muleVersion>${app.runtime}</muleVersion>
 					<username>rakeshntt</username>
 					<password>R@kesh007</password>
+					<redeploy>true</redeploy>
 					<applicationName>git-demo</applicationName>
 					<environment>Sandbox</environment>
 				</configuration>
