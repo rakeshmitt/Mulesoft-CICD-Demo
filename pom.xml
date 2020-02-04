@@ -36,10 +36,18 @@
 					<muleVersion>${app.runtime}</muleVersion>
 					<username>rakeshntt</username>
 					<password>R@kesh007</password>
-					<target>cloudhub</target>
-					<targetType>Server</targetType>
+					<applicationName>git-demo</applicationName>
 					<environment>Sandbox</environment>
 				</configuration>
+				<executions>
+			        <execution>
+			            <id>deploy</id>
+			            <phase>deploy</phase>
+			            <goals>
+			                <goal>deploy</goal>
+			            </goals>
+			        </execution>
+			    </executions>
 			</plugin>
 		<plugin>
                 <groupId>com.mulesoft.munit.tools</groupId>
@@ -119,6 +127,10 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
+        <pluginRepository>
+	        <id>mule-public</id>
+	        <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+    	</pluginRepository>
     </pluginRepositories>
 
 </project>
