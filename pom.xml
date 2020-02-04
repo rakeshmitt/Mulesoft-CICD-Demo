@@ -33,7 +33,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<deploymentType>cloudhub</deploymentType>
-					<muleVersion>4.2.0</muleVersion>
+					<muleVersion>${app.runtime}</muleVersion>
 					<username>rakeshntt</username>
 					<password>R@kesh007</password>
 					<target>cloudhub</target>
@@ -44,7 +44,7 @@
 		<plugin>
                 <groupId>com.mulesoft.munit.tools</groupId>
                 <artifactId>munit-maven-plugin</artifactId>
-                <version>2.2</version>
+                <version>${munit.version}</version>
                 <executions>
                     <execution>
                         <id>test</id>
